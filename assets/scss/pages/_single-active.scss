@@ -1,0 +1,85 @@
+// h2 {
+//     margin: 0px;
+//     font-size: 22px;
+//   }
+//   .date {
+//     padding: 14px 24px;
+//   }
+//   .time::before {
+//     content: "";
+//     position: absolute;
+//     width: 50px;
+//     height: 2px;
+//     left: 50%;
+//     transform: translateX(-50%) rotate(120deg);
+//     background-color: black;
+//   }
+  
+//   @media (min-width: 768px) {
+//     h2 {
+//       margin-bottom: 126px;
+//       font-size: 48px;
+//     }
+//     p {
+//       font-size: 32px;
+//     }
+//     .date {
+//       padding: 48px 44px;
+//     }
+//     .time::before {
+//       width: 100px;
+//       height: 2px;
+//       top: 50%;
+//     }
+//   }
+  
+.fs-22{
+    font-size: 22px;
+}
+.tag-checkbox {
+    // 隱藏 checkbox
+    display: none;
+  }
+  .tag-list {
+    .tag-item {
+      position: relative;
+      border-left: 4px solid $black;
+    }
+    .tag-item:focus {
+      // 移除 Bootstrap 預設的按鈕 focus 邊框
+      box-shadow: none;
+    }
+    // 當 .tag-item 被 hover 的時候 .tag-item 加入以下樣式
+    .tag-item:hover,
+     // 當 .tag-item 同層有 .active 的時候 .tag-item 加入以下樣式
+    .tag-item.active,
+       // 當 .tag-checkbox 狀態是 checked 的時候，同階層的 .tag-item 加入以下樣式
+    .tag-checkbox:checked + .tag-item {
+      background-color: $primary;
+      color: $white;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        background-color: $secondary;
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -4px;
+      }
+    }
+  }
+  
+  .table-border-2{
+    border-bottom: 2px solid $primary;
+  }
+
+  .fs-60{
+    @include pad-sm{
+      font-size: 32px;
+    }
+  }
+  .fs-22{
+    @include pad-sm{
+      font-size: 16px;
+    }
+  }

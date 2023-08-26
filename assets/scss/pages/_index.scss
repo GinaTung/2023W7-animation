@@ -1,0 +1,118 @@
+.container{
+    .banner{
+        background-image: url("../images/Rectangle3.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.img-fit{
+    object-fit: cover; 
+}
+.img-position{
+    object-position: 0% 33%;
+}
+.img-explore-spacer{
+    padding: 32px 56px;
+    @include pad{
+    padding: 16px 34px;
+       }
+}
+.img-explore-size{
+    width: 80px;
+    height: 80px;
+    @include pad-sm{
+     width: 40px;
+     height: 40px;
+    }
+}
+.btn-spacer{
+    padding: 36px 40px;
+    @include pad-sm{
+        padding: 22px 30px;
+    }
+}
+.img-active-size{
+    width: 416px;
+    height: 255px;
+}
+.border-left-1{
+    border-left: 4px solid $dark !important;
+    &:hover{
+      border-left: 4px solid $secondary !important; 
+    }
+}
+.mt-60 {
+    margin-top: 60px;
+  }
+  // 以下為相簿區塊
+  .albums-tag {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+  .trans-card {
+    &:nth-child(2n) {
+        transform: rotate(2deg);
+    }
+    &:nth-child(3) {
+        transform: rotate(-2deg);
+    }
+  }
+  .pic {
+    object-fit: cover;
+    height: 291px;
+    @media(min-width:576px) {
+      height: 274px;
+    }
+  }
+  .mb-60{
+    margin-bottom: 60px !important;
+  }
+  .pt-60{
+    padding-top: 60px;
+  }
+  
+  .fs-60{
+    @include pad-sm{
+      font-size: 60px;
+    }
+  }
+  .hover-text-decoration:hover{
+    text-decoration: underline;
+  }
+  .hover-bg-yellow:hover{
+    background-color: $secondary;
+    border-radius: 50px;
+  }
+  .modal-btn{
+    background-color: $black;
+    border: 0px;
+    color: $secondary;
+  }
+  .modal-btn:hover{
+    background-color: $black;
+    color: $white;
+  }
+  .modal{
+    h4{
+      font-family: 'Noto Serif TC', sans-serif;
+    }
+  }
+  .btn-close{
+    opacity:1;
+  }
+  .hover-text-yellow{
+    &:hover{
+    color: $secondary !important;
+    }
+  }
+  .hover-text-yellow2{
+    &:hover{
+    color: #9C9E18 !important;
+    }
+  }
+  .pagination-hover{
+    &:hover{
+      background: $primary !important;
+      color: $secondary !important;
+    }
+  }

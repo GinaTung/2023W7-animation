@@ -1,0 +1,51 @@
+.navbar{
+  .pb-sm-5{
+    padding-bottom: 24px !important;
+  }
+}
+@media(max-width:768px){
+  .pm-0{
+    padding-bottom: 0 !important;
+  }
+  .navbar{
+    .pb-3{
+      padding-bottom: 12px !important;
+    }
+  }
+  .navbar-brand{
+    h1{
+      display: none !important;
+    }
+    .me-sm-4 {
+        margin-right: 0px !important;
+    }
+    .ms-5{
+      margin-left: 24px!important;
+    }
+  }
+}
+.img-size{
+  width: 53px;
+  height: 53px;
+  @include pad-sm{
+   width: 40px;
+   height: 40px;
+  }
+}
+.img-size-2{
+  @include pad-sm{
+    font-size: 15px !important;
+  }
+}
+.input-size{
+  width: 284px;
+  @include pc-lg{
+    width: 168px !important;
+  }
+}
+.btn-p-size{
+  padding: 16px;
+  @include pad-sm{
+    padding: 12px !important;
+  }
+}

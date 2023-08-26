@@ -1,0 +1,21 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Serif TC', serif !important;
+    line-height: 1.5 ;
+    // BS5已設定fs-1至-6不會自適應， .h1 ~ .h6 預設行高則為 line-height: 1.2;，fw:500
+    // fs-1 ~ .fs-6 的預設行高會是 line-height: 1.5; 
+    h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 ,p{
+        margin-bottom: 0;
+        line-height: 1.5;
+        color:$primary;
+    }
+}
+img{
+    // .img-fluid 來讓圖片加入 max-width: 100% 和 height: auto;
+    max-width: 100% ;
+    vertical-align: middle ;
+    height: auto ;
+}
+
