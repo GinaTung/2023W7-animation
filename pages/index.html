@@ -6,65 +6,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7TAO活動訂票網</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
     <div class="container mt-6 mb-6 mb-sm-8">
-      <div class="banner">
+      <div class="banner" data-aos="fade-up">
         <p class="fs-60 fs-3 ps-7 ps-sm-8 text-white mb-280 pt-4 pt-sm-8 font-yeseva">19 MAY 2023</p>
         <div class="text-center pb-5">
           <p class="fs-6 fs-sm-4 text-white mb-sm-4 letter-spacing">隔牆有耳-沒有草東的派對</p>
-          <p class="text-white d-none d-sm-block">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>帶上啤酒、野餐墊，讓我們在Live
+          <p class="text-white d-none d-sm-block">
+            你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>帶上啤酒、野餐墊，讓我們在Live
             House外面一起開場「沒有草東的派對」吧！</p>
         </div>
       </div>
     </div>
     <div class="container mb-6 mb-sm-8">
       <div class="row row-cols-3 row-cols-xl-6 g-2 g-md-3 g-xxl-4 h-100">
-        <div class="col">
+        <div class="col" data-aos="fade-right" data-aos-duration="500">
           <a class="border border-primary border-2 img-explore-spacer d-flex flex-column align-items-center h-100"
             href="#" type="button">
             <img src="../assets/images/cate01.svg" alt="演出" class="pb-2 pb-sm-3 img-explore-size">
             <span class="fs-7 fs-md-4 fw-bold">演出</span>
           </a>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-right" data-aos-duration="600">
           <a class="border border-primary border-2 img-explore-spacer d-flex flex-column align-items-center h-100"
             href="#" type="button">
             <img src="../assets/images/cate02.svg" alt="聯誼" class="pb-2 pb-sm-3 img-explore-size">
             <span class="fs-7 fs-md-4 fw-bold">聯誼</span>
           </a>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-right" data-aos-duration="700">
           <a class="border border-primary border-2 img-explore-spacer d-flex flex-column align-items-center h-100"
             href="#" type="button">
             <img src="../assets/images/cate03.svg" alt="展覽" class="img-fit pb-2 pb-sm-3 img-explore-size">
             <span class="fs-7 fs-md-4 fw-bold">展覽</span>
           </a>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-right" data-aos-duration="800">
           <a class="border border-primary border-2 img-explore-spacer d-flex flex-column align-items-center h-100"
             href="#" type="button">
             <img src="../assets/images/cate04.svg" alt="展覽" class="img-fit pb-2 pb-sm-3 img-explore-size">
             <span class="fs-7 fs-md-4 fw-bold">美食</span>
           </a>
         </div>
-        <div class="col">
+        <div class="col" data-aos="fade-right" data-aos-duration="900">
           <a class="border border-primary border-2 img-explore-spacer d-flex flex-column align-items-center h-100"
             href="#" type="button">
             <img src="../assets/images/cate05.svg" alt="展覽" class="img-fit pb-2 pb-sm-3 img-explore-size">
             <span class="fs-7 fs-md-4 fw-bold">戶外</span>
           </a>
         </div>
-        <div class="col">
+        <div class="col" data-aos="zoom-in-left" data-aos-duration="1000">
           <a class="bg-primary text-secondary fs-4 fs-md-2 w-100 h-100 lh-sm text-center btn-spacer fw-bold"
             href="events-list.html" type="button">探索<br>更多</a>
         </div>
       </div>
     </div>
-    <div class="container mb-60">
-      <div class="d-flex align-items-center justify-content-between border border-3 border-primary mb-5 mb-sm-6 py-4 py-sm-5 px-3 px-sm-6">
+    <div class="container mb-9">
+      <div
+        class="d-flex align-items-center justify-content-between border border-3 border-primary mb-5 mb-sm-6 py-4 py-sm-5 px-3 px-sm-6">
         <h2 class="fs-4 fs-sm-1">
           RECENT
         </h2>
@@ -74,7 +77,7 @@
       </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col mb-2 mb-sm-4">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0" data-aos="flip-left">
             <div
               class="card-header fs-3 fs-xl-2 border-bottom border-3 border-primary pb-2 pb-sm-3 mb-4 mb-sm-3 pt-0 font-yeseva">
               <a href="single-active.html">19 MAY 2023</a>
@@ -94,7 +97,8 @@
                 <img src="../assets/images/sparkler.png" alt="sparkler" style="width: 24px;height: 24px;">
                 <span class="ms-1">社群活動</span>
               </a>
-              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 開賣中<span class="material-icons-outlined ms-1">
                   keyboard_double_arrow_right
                 </span>
@@ -103,7 +107,7 @@
           </div>
         </div>
         <div class="col mb-2 mb-sm-4">
-          <div class="card h-100  border-0">
+          <div class="card h-100  border-0" data-aos="flip-left">
             <div
               class="card-header fs-3 fs-xl-2 border-bottom border-3 border-primary pb-2 pb-sm-3 mb-4 mb-sm-3 pt-0 font-yeseva">
               <a href="single-active.html">23 MAY 2023</a>
@@ -121,7 +125,8 @@
                 <img src="../assets/images/sparkler.png" alt="sparkler" style="width: 24px;height: 24px;"><span
                   class="ms-1">演出</span>
               </a>
-              <a class="d-flex fw-bold hover-bg-yellow" href="single-active.html" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="d-flex fw-bold hover-bg-yellow" href="single-active.html" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 檢視活動<span class="material-icons-outlined ms-1">
                   keyboard_double_arrow_right
                 </span>
@@ -130,7 +135,7 @@
           </div>
         </div>
         <div class="col mb-2 mb-sm-4">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0" data-aos="flip-left">
             <div
               class="card-header fs-3 fs-xl-2 border-bottom border-3 border-primary pb-2 pb-sm-3 mb-4 mb-sm-3 pt-0 font-yeseva">
               <a href="single-active.html">30 MAY 2023</a>
@@ -149,7 +154,8 @@
                 <img src="../assets/images/sparkler.png" alt="sparkler" style="width: 24px;height: 24px;"><span
                   class="ms-1">聯誼</span>
               </a>
-              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 開賣中<span class="material-icons-outlined ms-1">
                   keyboard_double_arrow_right
                 </span>
@@ -158,7 +164,7 @@
           </div>
         </div>
         <div class="col mb-2 mb-sm-4">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0" data-aos="flip-right">
             <div
               class="card-header fs-3 fs-xl-2 border-bottom border-3 border-primary pb-2 pb-sm-3 mb-4 mb-sm-3 pt-0 font-yeseva">
               <a href="single-active.html">12 June 2023</a>
@@ -176,7 +182,8 @@
                 <img src="../assets/images/sparkler.png" alt="sparkler" style="width: 24px;height: 24px;"><span
                   class="ms-1">遊戲競賽</span>
               </a>
-              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 開賣中<span class="material-icons-outlined ms-1">
                   keyboard_double_arrow_right
                 </span>
@@ -185,7 +192,7 @@
           </div>
         </div>
         <div class="col mb-2 mb-sm-4">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0" data-aos="flip-right">
             <div
               class="card-header fs-3 fs-xl-2 border-bottom border-3 border-primary pb-2 pb-sm-3 mb-4 mb-sm-3 pt-0 font-yeseva">
               <a href="single-active.html">25 June 2023</a>
@@ -203,7 +210,8 @@
                 <img src="../assets/images/sparkler.png" alt="sparkler" style="width: 24px;height: 24px;"><span
                   class="ms-1">社群活動</span>
               </a>
-              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 開賣中<span class="material-icons-outlined ms-1">
                   keyboard_double_arrow_right
                 </span>
@@ -212,7 +220,7 @@
           </div>
         </div>
         <div class="col mb-2 mb-sm-4">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0" data-aos="flip-right">
             <div
               class="card-header fs-3 fs-xl-2 border-bottom border-3 border-primary pb-2 pb-sm-3 mb-4 mb-sm-3 pt-0 font-yeseva">
               <a href="single-active.html">9 July 2023</a>
@@ -229,7 +237,8 @@
                 <img src="../assets/images/sparkler.png" alt="sparkler" style="width: 24px;height: 24px;"><span
                   class="ms-1">展覽</span>
               </a>
-              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a class="d-flex fw-bold hover-bg-yellow" href="#" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 開賣中<span class="material-icons-outlined ms-1">
                   keyboard_double_arrow_right
                 </span>
@@ -260,7 +269,8 @@
       </div>
     </div>
     <div class="container mb-8">
-      <div class="d-flex align-items-center justify-content-between border border-3 border-primary mb-5 mb-sm-6 py-4 py-sm-5 px-3 px-sm-6">
+      <div
+        class="d-flex align-items-center justify-content-between border border-3 border-primary mb-5 mb-sm-6 py-4 py-sm-5 px-3 px-sm-6">
         <h2 class="fs-4 fs-sm-1">
           ONLINE
         </h2>
@@ -277,7 +287,7 @@
           </div>
           <div class="col-md-5 d-flex flex-column align-content-between">
             <div class="card-body p-0 ">
-              <p class="fs-3 mb-4">切特居批踢</p>
+              <p class="fs-6 fs-sm-3 mb-4 fw-bold">切特居批踢</p>
               <div class="d-flex mb-6">
                 <a type="button" class="btn btn-outline-primary  me-2 py-1 px-5 border-left-1">競賽</a>
                 <a type="button" class="btn btn-outline-primary  me-2 py-1 px-5 border-left-1">科技</a>
@@ -287,9 +297,9 @@
                 這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
                 該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
             </div>
-            <div class="card-footer bg-transparent p-0">
+            <div class="card-footer bg-transparent p-0" data-aos="zoom-in-right">
               <a type="button"
-                class="w-100 btn btn-primary fs-5 py-2 d-flex align-items-center justify-content-center hover-text-yellow">查看活動詳情<span
+                class="w-100 btn btn-primary fs-7 fs-sm-5 py-2 d-flex align-items-center justify-content-center hover-text-yellow">查看活動詳情<span
                   class="material-icons-outlined ms-1">
                   keyboard_double_arrow_right
                 </span></a>
@@ -312,8 +322,9 @@
       </div>
     </div>
     <!-- 產生X軸原因是未寫flex問題 -->
-    <div class="container mb-60">
-      <ul class="row mt-60 list-unstyled flex-column flex-md-row gy-mb-4 gy-5 align-items-center align-items-md-stretch">
+    <div class="container mb-9">
+      <ul
+        class="row mt-9 list-unstyled flex-column flex-md-row gy-mb-4 gy-5 align-items-center align-items-md-stretch">
         <li class="col-lg-3 col-md-6 col-10 trans-card">
           <div class="item border border-2 border-dark p-3 p-sm-4 pb-5 position-relative">
             <h2 class="position-absolute top-0 start-50 translate-middle fs-6 bg-white px-3 py-2 fw-bold h2-transform">
@@ -361,14 +372,14 @@
         </div>
       </div>
     </div>
-    <div class="container mb-60">
+    <div class="container mb-9">
       <div class="row g-0">
         <div class="col-sm-6">
-          <div class="card bg-transparent border-primary border-2">
-            <div class="card-header py-4 px-6 bg-transparent border-primary ">
-              <p class="fs-3 fw-bold">#FOLLOW US</p>
+          <div class="card border-primary border-2">
+            <div class="card-header py-4 px-3 px-sm-6  border-primary ">
+              <p class="fs-4 fs-sm-3 fw-bold">#FOLLOW US</p>
             </div>
-            <div class="card-body p-6">
+            <div class="card-body px-3 py-4 p-sm-6">
               <p class="card-text mb-6">想第一時間獲得新奇有趣的活動資訊？<br>
                 追蹤我們的社群吧！<br>
                 也歡迎你聯繫我們，提供好玩有趣的活動企劃。</p>
@@ -396,11 +407,11 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div class="card bg-transparent border-primary h-100 border-2">
-            <div class="card-header py-4 px-6 bg-transparent border-primary">
-              <p class="fs-3 fw-bold">#subscribe us</p>
+          <div class="card border-primary h-100 border-2">
+            <div class="card-header py-4 px-3 px-sm-6 border-primary">
+              <p class="fs-4 fs-sm-3 fw-bold">#subscribe us</p>
             </div>
-            <div class="card-body p-6">
+            <div class="card-body px-3 py-4 p-sm-6">
               <p class="card-text mb-6">訂閱電子報送折價券！<br>
                 定期精選文章資訊及最新優惠資訊，<br>
                 還不通通給我訂閱起來？
@@ -409,10 +420,10 @@
                   placeholder="輸入Email" aria-label="Search">
               </form>
             </div>
-            <div class="card-footer bg-transparent p-0">
+            <div class="card-footer bg-transparent p-0" data-aos="zoom-in-right">
               <a type="button"
-                class="w-100 btn btn-primary fs-5 py-2 d-flex align-items-center justify-content-center hover-text-yellow">確認訂閱<span
-                  class="material-icons-outlined ms-1">
+                class="w-100 btn btn-primary fs-7 fs-sm-5 py-2 d-flex align-items-center justify-content-center hover-text-yellow">確認訂閱<span
+                  class="material-icons-outlined ms-1" data-aos="zoom-in-right" data-aos-easing="ease-in-sine">
                   keyboard_double_arrow_right
                 </span></a>
             </div>
@@ -421,12 +432,21 @@
       </div>
     </div>
     <div class="border-bottom border-top border-2 border-primary">
-      <div class="container text-center">
-        <p class="fs-3 pt-60 mb-4 fw-bold">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-        <p class="mb-60">——我也不知道誰說的</p>
+      <div class="container text-center" data-aos="fade-up"
+      data-aos-duration="3000">
+        <p class="fs-6 fs-sm-3 pt-8 pt-sm-9 mb-4 fw-bold">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+        <p class="fs-8 fs-sm-7 mb-8 mb-sm-9">——我也不知道誰說的</p>
       </div>
     </div>
     <%- include('./layout/footer'); -%>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 3000,
+          offset: 300,
+          delay: 400,
+        })
+      </script>
       <script type="module" src="../assets/js/swiper.js"></script>
       <script type="module" src="../main.js"></script>
 </body>
